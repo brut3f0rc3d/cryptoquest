@@ -1,11 +1,11 @@
 # cryptoquest
-Web application for the event cryptoquest for EDGE.
+Web application for the event **CryptoQuest** for [EDGE](http://www.edg.co.in).
 
-[+] Registration Portal
-[+] Fetches question serially from database
-[+] Different points for different questions
-[+] Learderboard
+- [+] Registration Portal
+- [+] Fetches question serially from database
+- [+] Different points for different questions
+- [+] Learderboard
 
-Things to be done
-[-] Admin Panel
-[-] Responsive UI
+**Things to be done**
+- [-] Admin Panel
+- [-] Responsive UI

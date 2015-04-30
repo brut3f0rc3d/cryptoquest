@@ -1,0 +1,32 @@
+#!/usr/bin/python2
+#ct=pt xor salt
+
+from binascii import unhexlify, hexlify
+import os
+#a:salt
+#b:key
+def strxor(a, b):     # xor two strings of different lengths
+    if len(a) > len(b):
+        os.system('exit')
+        return False
+    else:
+    	return "".join([chr(ord(x) ^ ord(y)) for (x, y) in zip(a, b[:len(a)])])
+
+
+pt = raw_input()
+success=False
+pt_is_correct=False
+#
+#	If pt matches, set pt_is_correct to true
+#
+salt = "strongsalt"
+xor=strxor(salt,pt)
+print hexlify(xor)
+#prints 051d020a1c0e17000907
+if(xor and pt_is_correct):
+	success=True
+if(success):
+	print "Congratulations! You have got the flag"
+else:
+	print "You're very close to the flag. Or maybe you aren't. I am not really sure."
+

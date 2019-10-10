@@ -1,7 +1,7 @@
 <?php
 
 define('SERVER','localhost');
-define('DBNAME','cryptoquest');
-define('USER','');
-define('PASSWORD','');
+define('DBNAME','quest');
+define('USER','root');
+define('PASSWORD','password');
 ?>
